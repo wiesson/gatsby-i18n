@@ -4,7 +4,6 @@ import Helmet from 'react-helmet';
 
 class IndexPage extends Component {
   render() {
-    console.log(this.props);
     const { dataJson: { title, copy, link } } = this.props.data;
 
     const lang =
