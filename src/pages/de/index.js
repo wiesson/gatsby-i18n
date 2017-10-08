@@ -2,7 +2,7 @@ import React from 'react';
 
 import IndexPage from '../../templates/IndexPage';
 
-export default ({ data }) => <IndexPage data={data.dataJson} lang="de" />;
+export default props => <IndexPage {...props} />;
 
 export const query = graphql`
   query IndexDeQuery {
