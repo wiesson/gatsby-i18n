@@ -1,17 +1,19 @@
 import React, { Component } from 'react';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
+import {domain} from "../layouts/index";
 
 class IndexPage extends Component {
   render() {
     const { dataJson: { title, copy, link } } = this.props.data;
+    const location = this.props.location;
 
     const lang =
-      this.props.location &&
-      this.props.location.pathname &&
-      this.props.location.pathname.length === 3 &&
-      this.props.location.pathname[0] === "/"
-        ? this.props.location.pathname.substring(1, 3)
+      location &&
+      location.pathname &&
+      location.pathname.length === 3 &&
+      location.pathname[0] === "/"
+        ? location.pathname.substring(1, 3)
         : 'en';
 
     return (
@@ -25,7 +27,7 @@ class IndexPage extends Component {
           link={[
             {
               rel: 'canonical',
-              href: window.location.href,
+              href: `${domain}${location.pathname}`,
               itemProp: 'url',
             },
           ]}
