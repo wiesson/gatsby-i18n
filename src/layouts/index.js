@@ -3,9 +3,10 @@ import PropTypes from 'prop-types';
 import Link from 'gatsby-link';
 import Helmet from 'react-helmet';
 
-export const domain = process.env.NODE_ENV === 'production'
-  ? "https://gatsby-i18n-example.netlify.com"
-  : "http://127.0.0.1:8000";
+export const domain =
+  process.env.NODE_ENV === 'production'
+    ? 'https://gatsby-i18n-example.netlify.com'
+    : 'http://127.0.0.1:8000';
 
 import './index.css';
 

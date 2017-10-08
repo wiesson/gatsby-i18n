@@ -10,6 +10,10 @@ export const query = graphql`
       title
       copy
       link
+      meta {
+        description
+        keywords
+      }
     }
   }
 `;

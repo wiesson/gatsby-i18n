@@ -4,7 +4,11 @@
     "Welcome to your new Gatsby site.",
     "Now go build something great."
   ],
-  "link": "Go to page 2"
+  "link": "Go to page 2",
+  "meta": {
+    "description": "Hi people",
+    "keywords": ""
+  }
 }
 
 

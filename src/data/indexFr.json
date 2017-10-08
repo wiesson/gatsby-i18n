@@ -4,7 +4,11 @@
     "Welcome to your new Gatsby site.",
     "Bienvenue sur votre nouveau site Gatsby."
   ],
-  "link": "Aller à la page 2"
+  "link": "Aller à la page 2",
+  "meta": {
+    "description": "Salut les gens",
+    "keywords": ""
+  }
 }
 
 
